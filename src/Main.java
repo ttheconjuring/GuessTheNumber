@@ -7,8 +7,10 @@ public class Main {
 
         int numberToBeGuessed = ThreadLocalRandom.current().nextInt(1, 100 + 1);
         System.out.println("The computer has just picked a number(1-100)! Try to guess it!");
+
         int choice = 0;
         int counter = 0;
+
         while (choice != numberToBeGuessed) {
             System.out.print("Your guess: ");
             choice = Integer.parseInt(sc.nextLine());
